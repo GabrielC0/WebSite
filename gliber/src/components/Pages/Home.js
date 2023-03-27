@@ -9,7 +9,6 @@ import "./Home.css";
 
 function Home() {
   const [isShown, setIsShown] = useState(false);
-
   return (
     <div className="Home">
       <div className="First-Section">
@@ -40,27 +39,21 @@ function Home() {
           <img
             src={PH1}
             alt="IMG 1"
+            className="IMG-Seconde-Section"
             onMouseEnter={() => setIsShown(true)}
             onMouseLeave={() => setIsShown(false)}
-            className="IMG-Seconde-Section"
           />
-          {isShown && (
-            <div
-              onMouseEnter={() => setIsShown(true)}
-              onMouseLeave={() => setIsShown(false)}
-            >
-              <button
-                style={{
-                  position: "relative",
-                  top: -200,
-                  backgroundColor: "blue",
-                  width: 200,
-                }}
-              >
-                button
-              </button>
-            </div>
-          )}
+          <div
+            onMouseEnter={() => setIsShown(true)}
+            onMouseLeave={() => setIsShown(false)}
+            style={{
+              opacity: isShown ? 1 : 0,
+              width: 300,
+              position: "absolute",
+            }}
+          >
+            <h1>Learn more</h1>
+          </div>
         </div>
       </div>
     </div>
