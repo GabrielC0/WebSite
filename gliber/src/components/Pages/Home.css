@@ -1,0 +1,32 @@
+.IMG-1 {
+  width: 80%;
+  height: 80%;
+}
+.First-Section-Text {
+  margin-top: 25px;
+  height: 300px;
+  margin-right: 190px;
+  margin-left: 190px;
+  /* background-color: bisque; */
+}
+.First-Section-Text a {
+  color: white;
+  letter-spacing: 20px;
+}
+.First-Section-Text p {
+  color: white;
+  letter-spacing: 5.8px;
+}
+.First-Section-Text button {
+  background-color: #434447;
+  padding: 10px;
+  border-color: azure;
+}
+.IMG-Seconde-Section {
+  width: 40%;
+  height: 40%;
+  margin: 5px;
+}
+.Seconde-Section-IMGS {
+  position: absolute;
+}

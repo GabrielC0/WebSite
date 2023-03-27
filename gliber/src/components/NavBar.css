@@ -1,0 +1,20 @@
+.App-header {
+  width: screen;
+  background-color: #282c34;
+  top: 0;
+  height: 80px;
+  display: block;
+  position: sticky;
+}
+.App-header button {
+  margin-right: 30px;
+  margin-top: 30px;
+  border-width: 0;
+  color: white;
+  background-color: #282c34;
+}
+.Logo-app {
+  width: 125px;
+  height: 80px;
+  float: left;
+}
