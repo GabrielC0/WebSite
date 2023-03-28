@@ -9,6 +9,9 @@ import "./Home.css";
 
 function Home() {
   const [isShown, setIsShown] = useState(false);
+
+  const Imgs = [{ img: PH1 }, { img: PH2 }, { img: PH3 }, { img: PH4 }];
+
   return (
     <div className="Home">
       <div className="First-Section">
@@ -33,31 +36,36 @@ function Home() {
           <button>Learn more</button>
         </div>
       </div>
-      <div style={{ height: "30px" }} />
+
       <div className="Seconde-Section">
-        <div className="Seconde-Section-IMGS">
-          <img
-            src={PH1}
-            alt="IMG 1"
-            className="IMG-Seconde-Section"
-            onMouseEnter={() => setIsShown(true)}
-            onMouseLeave={() => setIsShown(false)}
-          />
-          <div
-            onMouseEnter={() => setIsShown(true)}
-            onMouseLeave={() => setIsShown(false)}
-            style={{
-              opacity: isShown ? 1 : 0,
-              width: 300,
-              position: "absolute",
-            }}
-          >
-            <h1>Learn more</h1>
-          </div>
-        </div>
+        {Imgs.map((elem, index) => {
+          return (
+            <div className="Seconde-Section-IMGS" key={index}>
+              <div
+                onMouseEnter={() => setIsShown(true)}
+                onMouseLeave={() => setIsShown(false)}
+                style={{
+                  opacity: isShown ? 0.5 : 0,
+                  position: "absolute",
+                  backgroundColor: "black",
+                  width: 635,
+                  height: 370,
+                }}
+              >
+                <h1 style={{ color: "white" }}>Learn more</h1>
+              </div>
+              <img
+                alt="IMG 1"
+                onMouseEnter={() => setIsShown(true)}
+                onMouseLeave={() => setIsShown(false)}
+                className="IMG-Seconde-Section"
+                src={elem.img}
+              />
+            </div>
+          );
+        })}
       </div>
     </div>
   );
 }
-
 export default Home;

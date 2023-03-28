@@ -22,13 +22,21 @@
   border-color: azure;
 }
 .IMG-Seconde-Section {
-  width: 40%;
-  height: 40%;
-  margin: 5px;
+  width: 100%;
+  height: 100%;
+}
+.Seconde-Section-IMGS a {
+  font-weight: bold;
+  cursor: pointer;
+  background-color: blue;
+}
+
+.Seconde-Section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 320px;
 }
 .Seconde-Section-IMGS {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 40%;
+  height: 40%;
 }
