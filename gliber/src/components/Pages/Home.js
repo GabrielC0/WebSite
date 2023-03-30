@@ -80,7 +80,7 @@ function Home() {
         })}
       </div>
 
-      <div style={{ height: "50px" }} />
+      <div style={{ height: "250px" }} />
 
       <div className="Third-Section">
         <div className="Cascade-Section1">
