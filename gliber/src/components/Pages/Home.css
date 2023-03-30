@@ -2,6 +2,7 @@
   width: 80%;
   height: 80%;
 }
+
 .First-Section-Text {
   margin-top: 25px;
   height: 300px;
@@ -39,4 +40,37 @@
 .Seconde-Section-IMGS {
   width: 40%;
   height: 40%;
+}
+.Cascade-Section1 img {
+  width: 40%;
+  height: 50%;
+  position: absolute;
+}
+
+.Cascade-Section2 img {
+  width: 40%;
+  height: 50%;
+  position: absolute;
+}
+
+.Cascade-Section1 {
+  background-color: black;
+}
+.CIMG-1 {
+  z-index: 2;
+  left: 50px;
+  margin-top: 100px;
+}
+.CIMG-2 {
+  z-index: 1;
+  left: 150px;
+}
+.CIMG-3 {
+  z-index: 2;
+  left: 1000px;
+  margin-top: 100px;
+}
+.CIMG-4 {
+  z-index: 1;
+  left: 1100px;
 }
