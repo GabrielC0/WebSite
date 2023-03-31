@@ -80,14 +80,54 @@ function Home() {
         })}
       </div>
 
-      <div style={{ height: "250px" }} />
+      <div style={{ height: "100px" }} />
 
       <div className="Third-Section">
+        <h1>Mes réalisations :</h1>
+        <div style={{ height: "70px" }} />
         <div className="Cascade-Section1">
-          <img src={CPH1} alt="IMG 1" className="CIMG-1" />
+          <div
+            onMouseEnter={() => setIsShown(true)}
+            onMouseLeave={() => setIsShown(false)}
+            style={{
+              opacity: isShown ? 0.5 : 0,
+              position: "absolute",
+              backgroundColor: "black",
+              width: 761,
+              height: 465,
+              zIndex: 3,
+              marginTop: 100,
+              marginLeft: 50,
+            }}
+          >
+            <h1 style={{ color: "white" }}>Learn more</h1>
+          </div>
+          <img
+            src={CPH1}
+            alt="IMG 1"
+            className="CIMG-1"
+            onMouseEnter={() => setIsShown(true)}
+            onMouseLeave={() => setIsShown(false)}
+          />
           <img src={CPH2} alt="IMG 1" className="CIMG-2" />
         </div>
         <div className="Cascade-Section2">
+          <div
+            onMouseEnter={() => setIsShown(true)}
+            onMouseLeave={() => setIsShown(false)}
+            style={{
+              opacity: isShown ? 0.5 : 0,
+              position: "absolute",
+              backgroundColor: "black",
+              width: 761,
+              height: 465,
+              zIndex: 3,
+              marginTop: 100,
+              marginLeft: 1000,
+            }}
+          >
+            <h1 style={{ color: "white" }}>Learn more</h1>
+          </div>
           <img src={CPH3} alt="IMG 1" className="CIMG-3" />
           <img src={CPH4} alt="IMG 1" className="CIMG-4" />
         </div>

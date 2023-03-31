@@ -74,3 +74,10 @@
   z-index: 1;
   left: 1100px;
 }
+.Third-Section h1 {
+  cursor: default;
+  color: white;
+}
+.Third-Section {
+  cursor: pointer;
+}
