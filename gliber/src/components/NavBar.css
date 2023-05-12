@@ -5,6 +5,8 @@
   height: 80px;
   display: block;
   position: sticky;
+  margin-right: 80px;
+  z-index: 5;
 }
 .App-header button {
   margin-right: 30px;

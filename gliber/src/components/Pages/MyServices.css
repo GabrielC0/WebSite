@@ -1,0 +1,35 @@
+.App-ContainerMp {
+  align-content: center;
+  background-color: #282c34;
+}
+
+.First-Section-IMGMp {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.First-Section-IMGMp img {
+  width: 70%;
+}
+
+.Prestations-SectionMp {
+  z-index: 2;
+  bottom: 170px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-left: 70px;
+}
+
+.Prestations-SectionMp img {
+  width: 13%;
+}
+.Prestations-SectionMp a {
+  position: relative;
+  z-index: 2;
+  right: 80px;
+  top: 55px;
+  text-decoration: none;
+  color: white;
+}
